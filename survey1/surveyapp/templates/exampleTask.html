@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Example Demonstration Task</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+<h1>Example Task</h1>
+<div class="px-5 mx-5" style="font-size:x-large;">
+<p><br>Here is an example question, with a smiley face emoticon as the example image.</p>
+    <p><br>    <b>This example question has already been filled in with example answers.</b></p>
+    <p><br>    The example answers demonstrate how the questions may be answered.</p>
+    <p><br>    These are <b>not model answers</b>.</p>
+    <p>Please <b>answer the actual questions in whichever way you think is most relevant.</b></p>
+<p><br><hr><br></p>
+    </div>
+<img height="720px" width="720px" src="{% static 'img/smileyface.png' %}">
+
+    <div class="text-center">
+        <p><br><br><br></p>
+        <hr>
+        <p><br><br></p>
+        <p style="font-size: xx-large;">Is the above image an image of a real human face, or not?<br><br></p>
+        <div class="form-check" style="font-size:x-large;">
+            <label id="rand_answ_1" class="form-check-label" style="transform:scale(1.5);">
+                <input  type="radio" class="form-check-input" name="optradio1" disabled>Real<br><br><br>
+            </label>
+        </div>
+        <div class="form-check" style="font-size:x-large;">
+            <label id="rand_answ_2" class="form-check-label" style="transform:scale(1.5);">
+                <input type="radio" class="form-check-input" name="optradio1" checked >Not real<br><br><br>
+            </label>
+        </div>
+        <p></p>
+        <hr>
+        <p><br><br></p>
+
+        <div>
+        <p style="font-size: xx-large">Please give the level of confidence that you have in the above choice.<br></p>
+        <p style="font-size: x-large">On this scale, zero means "No confidence at all" while nine means "Complete confidence".<br><br></p>
+<div class="form-check-inline">
+  <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>0  &emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>1&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+    <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>2&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+    <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>3&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>4&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>5&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>6&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>7&emsp;&emsp;
+  </label>
+</div>
+<div class="form-check-inline ">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" disabled>8&emsp;&emsp;
+  </label>
+</div>
+ <div class="form-check-inline ">
+      <label class="form-check-label" style="transform:scale(1.5);">
+    <input type="radio" class="form-check-input" name="optradio" checked>9&emsp;&emsp;
+  </label>
+</div>
+    </div>
+
+        <p><br><br><br></p>
+        <hr>
+        <p><br><br></p>
+        <div class="text-center form-group">
+        <p style="font-size: xx-large">Give your reasoning:</p>
+            <div class="form-group col-xl-12">
+        <p><textarea readonly class="form-control" name="reasoning" style="font-size: 1.7em; height: 10rem; min-width: 100%; min-height:100px;" required id="id_reasoning" placeholder="Explain your decision."></textarea></p>
+        <p><br><br><br></p>
+            </div>
+        </div>
+        <hr>
+     <p style="font-size: x-large;"><br><br>If clicking on the relevant parts of the picture would help to explain your answer, please do so:</p>
+        <div class="container" style="position:relative;text-align:center;">
+            <img id='heatimg' src="{% static 'img/smileyface.png' %}" height="720px" width="720px">
+            <div id="container" style="position:absolute;top:0px;left:0px; transform: translate(27%,0%);">
+            </div>
+<script>
+    var clickedBoxes = new Array();
+    document.createSvg = function(tagName) {
+        var svgNS = "http://www.w3.org/2000/svg";
+        return this.createElementNS(svgNS, tagName);
+    };
+    var numberPerSide = 20;
+    var size = 10;
+    var pixelsPerSide = 400;
+    var grid = function(numberPerSide, size, pixelsPerSide, colors) {
+        var svg = document.createSvg("svg");
+        svg.setAttribute("width", pixelsPerSide);
+        svg.setAttribute("height", pixelsPerSide);
+        svg.setAttribute("viewBox", [0, 0, numberPerSide * size, numberPerSide * size].join(" "));
+        var setStartColours = ['11','02','20','70','81','92','07','18','29','97','88','79']
+        for(var i = 0; i < numberPerSide; i++) {
+            for(var j = 0; j < numberPerSide; j++) {
+              var color1 = colors[(i+j) % colors.length];
+              var color2 = colors[(i+j+1) % colors.length];
+              var g = document.createSvg("g");
+              g.setAttribute("transform", ["translate(", i*size, ",", j*size, ")"].join(""));
+              var number = numberPerSide * i + j;
+              var box = document.createSvg("rect");
+              box.setAttribute("width", size);
+              box.setAttribute("height", size);
+              var thisSq = '';
+              thisSq += i;
+              thisSq += j;
+              console.log(thisSq);
+              if (setStartColours.includes(thisSq)) {
+              box.setAttribute("fill", "rgba('0,0,255,0.3')");
+              } else {
+              box.setAttribute("fill", color1);
+              };
+              box.setAttribute("opacity", 0.5);
+              box.setAttribute("id", "u"+number);
+              box.setAttribute("style", "stroke-width:0.1; stroke:rgb(43, 222, 221);");
+              g.appendChild(box);
+              svg.appendChild(g);
+            }
+        }
+        return svg;
+    };
+    var container = document.getElementById("container");
+    container.appendChild(grid(10, 10, 720, ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]));
+    </script>
+     </div>
+<script>
+var reasons = document.getElementById("id_reasoning");
+reasons.value = "It's obviously just a smiley face emoticon, not a real face.\nSpecifically, the face's colour is bright yellow and its shape is perfectly circular.";
+</script>
+</div>
+
+<div class="col-md-8" style="margin:auto">
+    <p><br><br></p>
+    <a class="btn btn-primary btn-lg btn-block" style="margin:0px 0px;" href="{% url 'dataProtection' %}">Next Page</a>
+    <p><br><br><br></p>
+</div>
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

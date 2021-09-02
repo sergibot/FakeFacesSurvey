@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<p lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Pre-Survey Extra Question Page</title>
+        <!-- CSS only -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        {% load static %}
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+    </head>
+    <body>
+
+    <div class="container">
+        <h1>Pre-Survey Extra Question Page</h1>
+
+        <div class="col-lg-12" style="font-size:x-large;"><br>
+
+<p>
+    &emsp;Before we start this survey's main question sequence, it would be greatly appreciated if you could help us with
+    a concern regarding future surveys.
+    <br><br>
+    &emsp;For a future survey, we want to welcome the participants with <br>a brief greeting message that is <b>the best combination of the following:</b>
+<ul>- <b>engaging</b></ul>
+<ul>- <b>professional</b></ul>
+<ul>- <b>uplifting</b></ul>
+<br>
+&emsp;This is in order that the best quality data can be obtained from that future survey.
+<br><br>
+&emsp;Note that this does not concern the survey you are currently doing - it is merely to help us engage future participants so that they have the best experience whilst also providing the best quality data in future surveys.
+<br><br><br><hr><br><br>
+&emsp;Please give each greeting message a ranking taking account of the above factors (i.e. that the message is: <b>engaging, professional, and uplifting</b>).
+<br><br>
+&emsp;The options to consider are the following:
+<br><br><br><hr><br></p>
+</div>
+<form action="" method="post">
+    {% csrf_token %}
+    <div id="greetings-boxes">
+        <div class="form-group row">
+            {% for field in form %}
+            <div class="col-sm-9">
+                <p style="font-size:x-large">{{ field.label_tag }}</p>
+            </div>
+            <div class="col-sm-3">
+                <select required class="form-control">
+                    <option value="">Please select a ranking</option>
+                    <option value="1">1 (worst)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (best)</option>
+                </select>
+            </div>
+            <div class="col-sm-12">
+                <p><br><hr><br></p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <p style="font-size:x-large"><br><br>Please also write your own greeting message in the box below, <br>again attempting to make it <b>engaging, professional, and uplifting</b>.<br><br></p>
+    <input type="text" required class="form-control" minlength="10" style="height:3em" placeholder="Write greeting message here.">
+    <p><br><br><br><br><hr><br><br></p>
+
+
+    <div class="col-lg-12" style="font-size:x-large;" id="thanks-boxes">
+        <p>
+            In addition, it would again be very helpful if you could repeat the process for the following "Thank you" message options.
+            <br><br>
+            Again, please give each "Thank you" message a ranking that takes into account the same factors:<br>
+        <ul>- <b>engaging</b></ul>
+        <ul>- <b>professional</b></ul>
+        <ul>- <b>uplifting</b></ul>
+        <br>
+        The options to consider are the following:
+        <br><br><br><hr><br>
+        </p>
+        <div class="form-group row">
+            {% for field in form_thanks %}
+            <div class="col-sm-9">
+                <p style="font-size:x-large">{{ field.label_tag }}</p>
+            </div>
+            <div class="col-sm-3">
+                <select required class="form-control">
+                    <option value="">Please select a ranking</option>
+                    <option value="1">1 (worst)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (best)</option>
+                </select>
+            </div>
+            <div class="col-sm-12">
+                <p><br><hr><br></p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    <p style="font-size:x-large"><br><br>Please also write your own "Thank you" message in the box below, <br>again attempting to make it <b>engaging, professional, and uplifting</b>.<br><br></p>
+    <input type="text" required class="form-control" minlength="10" style="height:3em" placeholder='Write "thank you" message here.'>
+    <p><br></p>
+
+
+
+    <input class="btn btn-primary btn-lg btn-block" style="font-size:x-large;" type="submit" value="Next Page">
+
+</form>
+
+<br>
+
+
+<p><br></p>
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Task Instructions</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Task Instructions</h1>
+    <div class="px-5" style="font-size:xx-large;">
+        <p><br><i>The data you submit will be kept anonymous.</i></p>
+        <p style="padding-left:0%"><br> Your task is as follows:</p>
+        <p ><br>for each image shown to you, you are asked to decide whether it is </p>
+        <p style="padding-left: 4%;"><br>an image of a real human face <br><br>or <br><br>an artificial image that has been created by this AI technology.<br></p>
+    </div>
+    <p><br></p>
+
+    <div class="px-5" style="font-size:x-large;">
+        <p><hr><br>You will also be asked for the level of <b>confidence</b> you have in each of these answers.<br><br></p>
+    </div>
+    <hr>
+
+    <div class="px-5" style="font-size:x-large;">
+        <p><br>After your judgment we ask you to <b>explain</b> a little more about your decision.<br><br></p>
+        <p>Specifically, we are interested in <u>which elements of the image affected your decision</u>.<br><br></p>
+    </div>
+    <hr>
+    <div class="px-5" style="font-size:x-large;">
+        <p><br>In addition, you will see a <b>copy of the image with a grid</b> over it.<br><br></p>
+        <p>Here we ask you to <u>click the grid-squares containing any parts of the image that affected your decision</u>.<br><br><hr><br></p>
+
+    </div>
+    <div class="col text-center">
+        <a class="btn btn-primary btn-lg btn-block" href="{% url 'exampleTask' %}">Next Page</a>
+    </div>
+
+    <p><br></p>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

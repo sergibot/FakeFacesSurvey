@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Help Page</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Introductory Help</h1>
+    <div class="row mx-4">
+        <p style="font-size:x-large">
+            <br>
+            Below are examples of ten "tell-tale" features that the <b>AI-generated images</b> tend to exhibit.
+            <br><br>Again, <b>these images feature the faces of people who do not exist</b>.
+            <br><br>
+            The features are divided into three categories: &emsp;Background, Asymmetry, and Abnormalities.
+            <br><br><br><br>Note that <b>perhaps none of these features will appear</b> on a given AI-generated image.
+            <br><br>Note also that these are <b>not the only features that can be used to distinguish the AI-generated images</b>.
+            <br><br><b>The features are a guide</b>; it is important to also apply an element of <b>common sense.</b>
+            <br><br><br><br>
+
+            In the main question sequence, you will be <b>tested on your ability to distinguish these images from images of faces of people who do exist</b>. <br><br>
+            <b>You will be quizzed on your memory of these signs later.</b><br><br><br><br>
+            <b>Please study these carefully.</b> <br><br>
+        </p>
+    </div>
+
+    {% for div1 in maj %}
+    <br>
+    <br>
+    <hr>
+    <div style="padding-left:5%; padding-top:1%; padding-bottom: 1%;" id='{{ div1 }}'></div>
+    {% endfor %}
+</div>
+
+<div style="display: none">
+    <li>
+        <ul>a) asymmetries</ul>
+        <ul id="la1">
+            <br> <b>Glasses:</b> <br>&emsp;The frame or style of glasses may be asymmetrical; glasses may also be half-transparent.<br>
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/glasses1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/glasses2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="la2"><br> <b>Earrings:</b> <br>&emsp;Earrings may have different shapes.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/earrings1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/earrings2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="la3"><br> <b>Facial hair: </b><br>&emsp;Facial hair may be heavier on one side of the face than the other.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/beard1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/beard2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul>b) background</ul>
+        <ul id="lb1"><br><b>Impossible location:</b><br>&emsp;The background may look like it could not possibly correspond to an actual location.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/location1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/location2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="lb2"><br> <b>Warped companion faces:</b><br>&emsp;If any additional face is in the picture, it may be very warped.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/companion1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/companion2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="lb3"><br> <b>Distorted text/patterns:</b><br>&emsp;Any text or patterns in the background may be distorted and warped.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/distorted1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/distorted2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="lb4"><br> <b>Colours bleed in from background:</b><br>&emsp;Patterns or colours from the background may seep into the clothing or hair of the person.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/bleed1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/bleed2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul>c) abnormalities</ul>
+        <ul id="lc1"><br> <b>Accessories don’t make sense:</b><br>&emsp;Accessories such as hats or headdresses, or glasses or earrings, may not look right; logos or patterns may look warped or melted.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/accessories1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/accessories2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="lc2"><br> <b>Abnormal clothing structure:</b><br>&emsp;The clothes may appear structurally abnormal or impossible.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/clothes1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/clothes2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+        <ul id="lc3"><br> <b>Strange clothing fabric:</b><br>&emsp;The material of the clothes may look extremely synthetic or otherwise abnormal.
+            <div class="row">
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/paint1.jpg' %}">
+                </div>
+                <div class="col">
+                    <img height="500" src="{% static 'img/help/paint2.jpg' %}">
+                </div>
+            </div>
+        </ul>
+    </li>
+</div>
+
+<p><br></p>
+<div class="container">
+    <form action="" method="post">
+        {% csrf_token %}
+    <input class="btn btn-primary btn-lg btn-block" style="font-size:x-large;" type="submit" value="Next Page">
+        </form>
+</div>
+
+    <p><br><br></p>
+
+<script>
+    var majA = document.getElementById("a");
+    majA.innerHTML = "<h2><br>Asymmetries</h2>";
+    {% for A in minA %}
+        majA.innerHTML += "<p style='font-size:x-large'>"+la{{ A }}.innerHTML+"<br></p>";
+    {% endfor %}
+    var majB = document.getElementById("b");
+    majB.innerHTML = "<h2><br>Background</h2>";
+    {% for B in minB %}
+        majB.innerHTML += "<p style='font-size:x-large'>"+lb{{ B }}.innerHTML+"<br></p>";
+    {% endfor %}
+    var majC = document.getElementById("c");
+    majC.innerHTML = "<h2><br>Abnormalities</h2>";
+    {% for C in minC %}
+        majC.innerHTML += "<p style='font-size:x-large'>"+lc{{ C }}.innerHTML+"<br></p>";
+    {% endfor %}
+</script>
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+

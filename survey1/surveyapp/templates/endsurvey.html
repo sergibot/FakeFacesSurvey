@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Finished Survey</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body>
+
+<div class="container">
+    <h1>Survey Complete</h1>
+
+    <div style="font-size:xx-large;">
+        <p><br>You have successfully completed this survey. Thank you!</p>
+        <p><br>This survey was concerned with an Artificial Intelligence technology which can create images of faces of people that don't exist.<br><br></p>
+        <p>Participants in this study received one of the following four forms of assistance to help researchers understand how potential assistance methods affect performance at the survey's central task:</p>
+        <div class="p-5">
+            <li>
+                No assistance <br>
+                This group were asked to rank a set of greeting messages and to add their own version, before the survey's central task began; and then to do the same for a series of thank you messages. <br>
+                This task was given to participants who are in the control group.<br>
+                It was a "filler" activity which took approximately as long as the activities the other groups were asked to complete,
+                while having neutral effect on participants' performance on the task.
+                <br><br>
+            </li>
+            <li>
+                Familiarization before questions <br>
+                This group were shown twenty examples of the AI-generated images before the survey's central task began.
+                <br><br>
+            </li>
+            <li>
+                Advice before questions <br>
+                This group were given three categories of "tell-tale features", which may have helped to distinguish the AI-generated images from the images of real human faces.
+                <br><br>
+            </li>
+            <li>
+                Advice before questions with reminder during questions <br>
+                This group were given the same three categories of "tell-tale features" as the "Advice before questions" group. <br>
+                Additionally, they were given a reminder of what these categories' "tell-tale features" were at the top of each webpage for the duration of the central task.
+            </li>
+        </div>
+        <hr><br>
+        <p>Please send any thoughts, queries, or concerns to the following email address: <br>&emsp;&emsp; s.bray@cs.ucl.ac.uk</p>
+        <br><hr><br>
+        <p>Please click the link below to redirect your browser to Prolific (which will then know that you have completed this survey).</p>
+        <div style="text-align:center;">
+            <a class="btn btn-success px-5 py-4" style="font-size:x-large" href="https://app.prolific.co/submissions/complete?XXXXXXXXXX">Redirect to Prolific</a>
+        </div>
+        <p><br></p>
+    </div>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>

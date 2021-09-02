@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Choices Page</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    {% load static %}
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+</head>
+<body onload="getPic()">
+<script type="text/javascript">
+
+
+function showValue(newValue)
+{
+	document.getElementById("range").innerHTML=newValue;
+}
+
+function getPic() {
+    var check = {{ num }};
+    var randNum0 = check;
+    var ppant = 'Participant Number: {{ ppant_id }}';
+    console.log(ppant);
+    var categ = 'Category: {{ category }}';
+    console.log(categ);
+<!--    console.log('Image number: '+randNum0);-->
+
+    switch (randNum0) {
+        case 1:
+<!--            console.log("1 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(1).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(1).png' %}";
+            break;
+        case 2:
+<!--            console.log("2 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(2).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(2).png' %}";
+            break;
+        case 3:
+<!--            console.log("3 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(3).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(3).png' %}";
+            break;
+        case 4:
+<!--            console.log("4 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(4).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(4).png' %}";
+            break;
+        case 5:
+<!--            console.log("5 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(5).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(5).png' %}";
+            break;
+        case 6:
+<!--            console.log("6 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(6).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(6).png' %}";
+            break;
+        case 7:
+<!--            console.log("7 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(7).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(7).png' %}";
+            break;
+        case 8:
+<!--            console.log("8 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(8).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(8).png' %}";
+            break;
+        case 9:
+<!--            console.log("9 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(9).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(9).png' %}";
+            break;
+        case 10:
+<!--            console.log("10 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(10).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(10).png' %}";
+            break;
+        case 11:
+<!--            console.log("11 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(11).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(11).png' %}";
+            break;
+        case 12:
+<!--            console.log("12 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(12).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(12).png' %}";
+            break;
+        case 13:
+<!--            console.log("13 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(13).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(13).png' %}";
+            break;
+        case 14:
+<!--            console.log("14 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(14).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(14).png' %}";
+            break;
+        case 15:
+<!--            console.log("15 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(15).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(15).png' %}";
+            break;
+        case 16:
+<!--            console.log("16 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(16).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(16).png' %}";
+            break;
+        case 17:
+<!--            console.log("17 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(17).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(17).png' %}";
+            break;
+        case 18:
+<!--            console.log("18 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(18).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(18).png' %}";
+            break;
+        case 19:
+<!--            console.log("19 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(19).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(19).png' %}";
+            break;
+        case 20:
+<!--            console.log("20 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(20).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(20).png' %}";
+            break;
+        case 21:
+<!--            console.log("21 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(21).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(21).png' %}";
+            break;
+        case 22:
+<!--            console.log("22 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(22).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(22).png' %}";
+            break;
+        case 23:
+<!--            console.log("23 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(23).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(23).png' %}";
+            break;
+        case 24:
+<!--            console.log("24 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(24).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(24).png' %}";
+            break;
+        case 25:
+<!--            console.log("25 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(25).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(25).png' %}";
+            break;
+        case 26:
+<!--            console.log("26 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(26).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(26).png' %}";
+            break;
+        case 27:
+<!--            console.log("27 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(27).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(27).png' %}";
+            break;
+        case 28:
+<!--            console.log("28 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(28).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(28).png' %}";
+            break;
+        case 29:
+<!--            console.log("29 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(29).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(29).png' %}";
+            break;
+        case 30:
+<!--            console.log("30 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(30).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(30).png' %}";
+            break;
+        case 31:
+<!--            console.log("31 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(31).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(31).png' %}";
+            break;
+        case 32:
+<!--            console.log("32 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(32).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(32).png' %}";
+            break;
+        case 33:
+<!--            console.log("33 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(33).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(33).png' %}";
+            break;
+        case 34:
+<!--            console.log("34 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(34).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(34).png' %}";
+            break;
+        case 35:
+<!--            console.log("35 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(35).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(35).png' %}";
+            break;
+        case 36:
+<!--            console.log("36 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(36).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(36).png' %}";
+            break;
+        case 37:
+<!--            console.log("37 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(37).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(37).png' %}";
+            break;
+        case 38:
+<!--            console.log("38 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(38).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(38).png' %}";
+            break;
+        case 39:
+<!--            console.log("39 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(39).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(39).png' %}";
+            break;
+        case 40:
+<!--            console.log("40 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(40).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(40).png' %}";
+            break;
+        case 41:
+<!--            console.log("41 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(41).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(41).png' %}";
+            break;
+        case 42:
+<!--            console.log("42 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(42).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(42).png' %}";
+            break;
+        case 43:
+<!--            console.log("43 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(43).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(43).png' %}";
+            break;
+        case 44:
+<!--            console.log("44 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(44).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(44).png' %}";
+            break;
+        case 45:
+<!--            console.log("45 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(45).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(45).png' %}";
+            break;
+        case 46:
+<!--            console.log("46 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(46).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(46).png' %}";
+            break;
+        case 47:
+<!--            console.log("47 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(47).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(47).png' %}";
+            break;
+        case 48:
+<!--            console.log("48 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(48).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(48).png' %}";
+            break;
+        case 49:
+<!--            console.log("49 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(49).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(49).png' %}";
+            break;
+        case 50:
+<!--            console.log("50 real");-->
+            document.getElementById("imageid").src="{% static 'img/person(50).png' %}";
+            document.getElementById("heatimg").src="{% static 'img/person(50).png' %}";
+            break;
+
+    case 51:
+<!--        console.log("51fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(51).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(51).jpg' %}";
+        break;
+    case 52:
+<!--        console.log("52fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(52).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(52).jpg' %}";
+        break;
+    case 53:
+<!--        console.log("53 fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(53).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(53).jpg' %}";
+        break;
+     case 54:
+<!--        console.log("54 fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(54).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(54).jpg' %}";
+        break;
+      case 55:
+<!--        console.log("55 fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(55).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(55).jpg' %}";
+        break;
+       case 56:
+<!--        console.log("56 fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(56).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(56).jpg' %}";
+        break;
+        case 57:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(57).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(57).jpg' %}";
+        break;
+         case 58:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(58).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(58).jpg' %}";
+        break;
+          case 59:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(59).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(59).jpg' %}";
+        break;
+           case 60:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(60).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(60).jpg' %}";
+        break;
+            case 61:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(61).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(61).jpg' %}";
+        break;
+             case 62:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(62).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(62).jpg' %}";
+        break;
+              case 63:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(63).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(63).jpg' %}";
+        break;
+               case 64:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(64).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(64).jpg' %}";
+        break;
+                case 65:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(65).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(65).jpg' %}";
+        break;
+                 case 66:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(66).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(66).jpg' %}";
+        break;
+                  case 67:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(67).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(67).jpg' %}";
+        break;
+                   case 68:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(68).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(68).jpg' %}";
+        break;
+                    case 69:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(69).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(69).jpg' %}";
+        break;
+                     case 70:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(70).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(70).jpg' %}";
+        break;
+                      case 71:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(71).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(71).jpg' %}";
+        break;
+                       case 72:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(72).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(72).jpg' %}";
+        break;
+                        case 73:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(73).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(73).jpg' %}";
+        break;
+                         case 74:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(74).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(74).jpg' %}";
+        break;
+                          case 75:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(75).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(75).jpg' %}";
+        break;
+                           case 76:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(76).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(76).jpg' %}";
+        break;
+                            case 77:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(77).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(77).jpg' %}";
+        break;
+                             case 78:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(78).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(78).jpg' %}";
+        break;
+                              case 79:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(79).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(79).jpg' %}";
+        break;
+                               case 80:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(80).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(80).jpg' %}";
+        break;
+                                case 81:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(81).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(81).jpg' %}";
+        break;
+                                 case 82:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(82).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(82).jpg' %}";
+        break;
+                                  case 83:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(83).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(83).jpg' %}";
+        break;
+                                   case 84:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(84).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(84).jpg' %}";
+        break;
+                                    case 85:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(85).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(85).jpg' %}";
+        break;
+                                     case 86:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(86).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(86).jpg' %}";
+        break;
+                                      case 87:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(87).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(87).jpg' %}";
+        break;
+                                       case 88:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(88).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(88).jpg' %}";
+        break;
+                                        case 89:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(89).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(89).jpg' %}";
+        break;
+                                         case 90:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(90).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(90).jpg' %}";
+        break;
+                                          case 91:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(91).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(91).jpg' %}";
+        break;
+                                           case 92:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(92).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(92).jpg' %}";
+        break;
+                                            case 93:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(93).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(93).jpg' %}";
+        break;
+                                             case 94:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(94).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(94).jpg' %}";
+        break;
+                                              case 95:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(95).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(95).jpg' %}";
+        break;
+                                               case 96:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(96).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(96).jpg' %}";
+        break;
+                                                case 97:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(97).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(97).jpg' %}";
+        break;
+                                                 case 98:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(98).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(98).jpg' %}";
+        break;
+                                                  case 99:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(99).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(99).jpg' %}";
+        break;
+                                                   case 100:
+<!--        console.log("fake");-->
+        document.getElementById("imageid").src="{% static 'img/person(100).jpg' %}";
+        document.getElementById("heatimg").src="{% static 'img/person(100).jpg' %}";
+        break;
+
+    }
+}
+</script>
+
+<div class="container">
+    <h1>Survey Main Question Page<br><br></h1>
+    <p style="font-size:x-large">Reminder: participants whose accuracy (at correctly labelling images as AI-generated or not) <br>scores in the top 50% of results will obtain a bonus payment of £0.75.<br><br><br></p>
+    <div class="row">
+        <img id='imageid' src="#" height="720px" width="720px">
+    </div>
+
+    <p><br></p>
+    {% if category == "D" %}
+    <br><hr>
+    <h1><small>Reminder of "tell-tale" features:</small><br><br></h1>
+    <div class="row ml-5 pl-2">
+        {% for div1 in maj %}
+        <div class="col" id='{{ div1 }}'></div>
+        {% endfor %}
+
+    </div>
+    {% endif %}
+
+    <div class="text-center">
+        <p><br></p>
+        <hr>
+        <p><br><br></p>
+        <div style="font-size:x-large;">
+            <p style="font-size: xx-large;" id='rand_qu'>Is the above image an image of a real human face, <br>or an AI-generated image of a face?<br><br><br></p>
+        </div>
+        <div>
+            <form action="" method="post">
+                {% csrf_token %}
+                <div class="form-group" style="font-size:x-large;">
+                    <label class="form_check_label" style="transform:scale(1.5)" id="id_choice_0">
+                        <input required class="form_check_input" type="radio" id="id_choice_0" name="choice" value="real">
+                        Image of a real human face
+                    </label>
+                </div>
+                <br><br><br>
+                <div class="form-group" style="font-size:x-large;">
+                    <label class="form_check_label" style="transform:scale(1.5)" id="id_choice_1">
+                        <input required class="form_check_input" type="radio" id="id_choice_1" name="choice" value="ai">
+                        AI-generated image of a face
+                    </label>
+                </div>
+                <br><br><br>
+                <p><br></p>
+                <hr>
+                <p><br><br></p>
+                <div>
+                    <p style="font-size: xx-large">Please give the level of confidence that you have in the above choice.<br></p>
+                    <p style="font-size: x-large">On this scale, zero means "No confidence at all" while nine means "Complete confidence".<br><br></p>
+                    <div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_0">
+                                <input required type="radio" class="form-check-input" id="id_confidence_0" name="confidence" value="0">0  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_1">
+                                <input required type="radio" class="form-check-input" id="id_confidence_1" name="confidence" value="1">1  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_2">
+                                <input required type="radio" class="form-check-input" id="id_confidence_2" name="confidence" value="2">2  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_3">
+                                <input required type="radio" class="form-check-input" id="id_confidence_3" name="confidence" value="3">3  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_4">
+                                <input required type="radio" class="form-check-input" id="id_confidence_4" name="confidence" value="4">4  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_5">
+                                <input required type="radio" class="form-check-input" id="id_confidence_5" name="confidence" value="5">5  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_6">
+                                <input required type="radio" class="form-check-input" id="id_confidence_6" name="confidence" value="6">6  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_7">
+                                <input required type="radio" class="form-check-input" id="id_confidence_7" name="confidence" value="7">7  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_8">
+                                <input required type="radio" class="form-check-input" id="id_confidence_8" name="confidence" value="8">8  &emsp;&emsp;
+                            </label>
+                        </div>
+                        <div class="form-check-inline ">
+                            <label class="form-check-label" style="transform:scale(1.5);" id="id_confidence_9">
+                                <input required type="radio" class="form-check-input" id="id_confidence_9" name="confidence" value="9">9  &emsp;&emsp;
+                            </label>
+                        </div>
+                    </div>
+                    <p><br><br><br></p>
+                    <hr>
+                    <p><br></p>
+                    <div class="text-center ">
+                        <p style="font-size: xx-large">Give your reasoning:</p>
+                        <div>
+                            <div class="form-group">
+                                <textarea required class="form-control" placeholder="Explain your decision." style="height:10rem;font-size:1.7em;" pattern="[A-Za-z].*" minlength="10" maxlength="500" id="id_reasoning" name="reasoning"></textarea>
+                            </div>
+                            <p><br><br></p>
+                            <hr>
+                        </div>
+                        <div style="display:none">
+                            <input type="text" value="{{ num }}" id="id_image" name="image">
+                        </div>
+                        <div>
+                            <p style="font-size: x-large;"><br><br>If clicking on the relevant parts of the picture would help to explain your answer, please do so:</p>
+                            <p><br></p>
+                            <div class="container" style="position:relative;text-align:center;">
+                                <img id='heatimg' src="#" height="720px" width="720px">
+                                <div id="container" style="position:absolute;top:0px;left:0px; transform: translate(27%,0%);">
+                                </div>
+                                <div style="display:none">
+                                    <div action="" method="post">
+                                        <input id="id_heatmapFill" name="heatmapFill">
+                                    </div>
+                                </div>
+                                <script>
+
+
+    var clickedBoxes = new Array();
+    clickedBoxes.push("FORM");
+    var toFill = document.getElementById("id_heatmapFill");
+    toFill.value = clickedBoxes;
+    document.createSvg = function(tagName) {
+        var svgNS = "http://www.w3.org/2000/svg";
+        return this.createElementNS(svgNS, tagName);
+    };
+    var numberPerSide = 20;
+    var size = 10;
+    var pixelsPerSide = 400;
+
+    var grid = function(numberPerSide, size, pixelsPerSide, colors) {
+        var svg = document.createSvg("svg");
+        svg.setAttribute("width", pixelsPerSide);
+        svg.setAttribute("height", pixelsPerSide);
+        svg.setAttribute("viewBox", [0, 0, numberPerSide * size, numberPerSide * size].join(" "));
+        for(var i = 0; i < numberPerSide; i++) {
+            for(var j = 0; j < numberPerSide; j++) {
+              var color1 = colors[(i+j) % colors.length];
+              var color2 = colors[(i+j+1) % colors.length];
+              var g = document.createSvg("g");
+              g.setAttribute("transform", ["translate(", i*size, ",", j*size, ")"].join(""));
+              var number = numberPerSide * i + j;
+              var box = document.createSvg("rect");
+              box.setAttribute("width", size);
+              box.setAttribute("height", size);
+              box.setAttribute("fill", color1);
+              box.setAttribute("opacity", 0.5);
+              box.setAttribute("id", "u"+number);
+              box.setAttribute("style", "stroke-width:0.1; stroke:rgb(43, 222, 221);");
+              g.appendChild(box);
+              svg.appendChild(g);
+            }
+        }
+        svg.addEventListener(
+            "click",
+            function(e){
+                var id = e.target.id;
+                if(id.substring(0,1)=="u") {
+                    e.target.id="c"+id.substring(1);
+                    e.target.style="fill:blue;opacity:0.3;stroke-width:0.1;stroke:rgb(43, 222, 221);";
+                    clickedBoxes.push(e.target.id.substring(1));}
+                else if(id.substring(0,1)=="c") {
+                    e.target.id="u"+id.substring(1);
+                    e.target.style="fill:rgba(255,0,0,0);stroke-width:0.1;stroke-opacity:0.5;stroke:rgb(43, 222, 221);";
+                    const index = clickedBoxes.indexOf(e.target.id.substring(1));
+                    if (index > -1) {
+                        clickedBoxes.splice(index,1);
+                    };
+                };
+                toFill.value = clickedBoxes;
+            },
+            false);
+        return svg;
+    };
+
+    var container = document.getElementById("container");
+    container.appendChild(grid(10, 10, 720, ["rgba(0, 0, 0, 0)", "rgba(0, 0, 0, 0)"]));
+    </script>
+                            </div>
+                            <p><br></p>
+                            <p><br></p>
+                            <div class="form-group">
+                                <button class="btn btn-primary btn-lg btn-block" style="font-size:x-large;" type="submit">Next Question</button>
+                            </div>
+            </form>
+        </div>
+        <p><br></p>
+        <p><br></p>
+        <p><br></p>
+    </div>
+
+    <div style="display: none">
+        <li>
+            <ul>a) Asymmetries<br><br></ul>
+            <ul id="la1">Glasses</ul>
+            <ul id="la2">Earrings</ul>
+            <ul id="la3">Facial hair</ul>
+            <ul>b) Background</ul>
+            <ul id="lb1">Impossible location</ul>
+            <ul id="lb2">Warped companion faces</ul>
+            <ul id="lb3">Distorted text/patterns</ul>
+            <ul id="lb4">Colours bleed in from background </ul>
+            <ul>c) Abnormalities</ul>
+            <ul id="lc1">Accessories don’t make sense </ul>
+            <ul id="lc2">Abnormal clothing structure </ul>
+            <ul id="lc3">Strange clothing fabric</ul>
+        </li>
+    </div>
+
+    <script>
+    var majA = document.getElementById("HELPa");
+    majA.innerHTML = "<h2>Asymmetries<br><br></h2>";
+    {% for A in minA %}
+        majA.innerHTML += "<p style='padding:2%; font-size:large;'>"+la{{ A }}.innerHTML+"</p>";
+    {% endfor %}
+    var majB = document.getElementById("HELPb");
+    majB.innerHTML = "<h2>Background<br><br></h2>";
+    {% for B in minB %}
+        majB.innerHTML += "<p style='padding:2%; font-size:large;'>"+lb{{ B }}.innerHTML+"</p>";
+    {% endfor %}
+    var majC = document.getElementById("HELPc");
+    majC.innerHTML = "<h2>Abnormalities<br><br></h2>";
+    {% for C in minC %}
+        majC.innerHTML += "<p style='padding:2%; font-size:large;'>"+lc{{ C }}.innerHTML+"</p>";
+    {% endfor %}
+</script>
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
